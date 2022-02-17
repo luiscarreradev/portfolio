@@ -1,0 +1,59 @@
+/*=============== VARIABLES CSS ===============*/
+:root{
+    --header-height: 5rem;
+
+    /*========== Colors ==========*/
+    --primary-color: #ffc600;
+    --button-color: #ffc600;
+    --background-aside-menu: #000000;
+    --color-aside-menu: #ffffff;
+    --button-color-alt: #ffcf22;
+    --title-color: #000000;
+    --text-color: #000000;
+    --text-color-light: #ffffff;
+    --body-color: #ffffff;
+    --container-color: #ffffff;
+    --border-color: #ffc600;
+
+    /*========== Font and typography ==========*/
+    /* 1rem = 10px */
+    --body-font: 'Roboto Mono', monospace;
+
+    --biggest-font-size: 3.2rem;
+    --h1-font-size: 2.4rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.8rem;
+    --normal-font-size: 1.5rem;
+    --small-font-size: 1.3rem;
+    --smaller-font-size: 1.2rem;
+
+    // Responsive typography
+    @media screen and (min-width: 968px){
+        --biggest-font-size: 4.8rem;
+        --h1-font-size: 3.6rem;
+        --h2-font-size: 2.4rem;
+        --h3-font-size: 2rem;
+        --normal-font-size: 1.6rem;
+        --small-font-size: 1.4rem;
+        --smaller-font-size: 1.3rem;
+    }
+
+    /*========== Font weight ==========*/
+    --font-thin: 100;
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+
+    /*========== Marges ==========*/
+    --m-0-5: 0.5rem;
+    --m-1: 1rem;
+    --m-1-5: 1.5rem;
+    --m-2: 2rem;
+    --m-2-5: 2.5rem;
+    --m-3: 3rem;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
