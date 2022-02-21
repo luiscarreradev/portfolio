@@ -6,7 +6,7 @@
   --button-color: #ffc600;
   --background-aside-menu: #000000;
   --color-aside-menu: #ececec;
-  --button-color-alt: #e7b500;
+  --button-color-alt: #ffcd16;
   --title-color: #000000;
   --text-color: #000000;
   --text-color-light: #ffffff;
@@ -17,9 +17,9 @@
   /* 1rem = 10px */
   --body-font: 'Roboto Mono', monospace;
   --biggest-font-size: 3.2rem;
-  --h1-font-size: 2.4rem;
-  --h2-font-size: 2rem;
-  --h3-font-size: 1.8rem;
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 1.8rem;
+  --h3-font-size: 1.7rem;
   --normal-font-size: 1.5rem;
   --small-font-size: 1.3rem;
   --smaller-font-size: 1.2rem;
@@ -37,6 +37,7 @@
   --m-2-5: 4.0rem;
   --m-3: 4.8rem;
   /*========== z index ==========*/
+  --z-back: -1;
   --z-tooltip: 10;
   --z-fixed: 100;
 }
@@ -109,16 +110,6 @@ button {
   outline: none;
 }
 
-.l-header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: var(--z-fixed);
-  -webkit-box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
-          box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
-}
-
 .container {
   min-width: 300px;
   max-width: 1024px;
@@ -129,8 +120,9 @@ button {
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
-  color: var(--primary-color);
-  margin-top: var(--m-1);
+  font-weight: var(--font-medium);
+  color: var(--text-color);
+  padding-top: 5rem;
   margin-bottom: var(--m-2);
   text-align: center;
 }
@@ -150,26 +142,15 @@ button {
 .section {
   padding-top: 3rem;
   padding-bottom: 2rem;
-}
-
-.bd-grid {
-  max-width: 1024px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
-  grid-column-gap: 3.2rem;
-  width: calc(100% - 3.2rem);
-  margin-left: var(--m-2);
-  margin-right: var(--m-2);
+  background-color: var(--color-aside-menu);
 }
 
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
   background-color: var(--button-color);
-  color: #FFF;
-  padding: 1rem 2rem;
+  padding: .7rem 2.2rem;
+  font-size: var(--small-font-size);
   font-weight: var(--font-medium);
   border-radius: 4px;
   -webkit-transition: .3s;
@@ -178,6 +159,16 @@ button {
 
 .button:hover {
   background-color: var(--button-color-alt);
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  -webkit-box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+          box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
 .nav {
@@ -298,36 +289,54 @@ button {
   right: 0;
 }
 
+.main {
+  width: 100%;
+}
+
 .home {
-  margin: var(--header-height) auto 0;
-  height: calc(100vh - 4.8rem);
-  row-gap: 1.6rem;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  padding-top: 5rem;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+      grid-template-areas: 'info info' 'icons picture';
 }
 
 .home__data {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: info;
 }
 
 .home__title {
   font-size: var(--h1-font-size);
   font-weight: var(--font-bold);
-  margin-bottom: var(--m-2);
+  margin-bottom: var(--m-1-5);
 }
 
 .home__title--color {
-  color: var(--primary-color);
+  position: relative;
 }
 
 .home__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: icons;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .home__social-icon {
@@ -335,7 +344,7 @@ button {
   width: -moz-max-content;
   width: max-content;
   margin-bottom: var(--m-1);
-  font-size: 2.4rem;
+  font-size: 2.2rem;
 }
 
 .home__social-icon:hover {
@@ -343,9 +352,22 @@ button {
 }
 
 .home__img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 170px;
+  max-width: 300px;
+  margin-left: 2rem;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: picture;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: end;
+}
+
+.about {
+  height: 100vh;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -2,8 +2,8 @@
 .button{
     display: inline-block;
     background-color: var(--button-color);
-    color: #FFF;
-    padding: 1rem 2rem;
+    padding: .7rem 2.2rem;
+    font-size: var(--small-font-size);
     font-weight: var(--font-medium);
     border-radius: 4px;
     transition: .3s;

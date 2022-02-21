@@ -7,7 +7,7 @@
     --button-color: #ffc600;
     --background-aside-menu: #000000;
     --color-aside-menu: #ececec;
-    --button-color-alt: #e7b500;
+    --button-color-alt: #ffcd16;
     --title-color: #000000;
     --text-color: #000000;
     --text-color-light: #ffffff;
@@ -20,9 +20,9 @@
     --body-font: 'Roboto Mono', monospace;
 
     --biggest-font-size: 3.2rem;
-    --h1-font-size: 2.4rem;
-    --h2-font-size: 2rem;
-    --h3-font-size: 1.8rem;
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 1.8rem;
+    --h3-font-size: 1.7rem;
     --normal-font-size: 1.5rem;
     --small-font-size: 1.3rem;
     --smaller-font-size: 1.2rem;
@@ -55,6 +55,7 @@
 
 
     /*========== z index ==========*/
+    --z-back: -1;
     --z-tooltip: 10;
     --z-fixed: 100;
 }
