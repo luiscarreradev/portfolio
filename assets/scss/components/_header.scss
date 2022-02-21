@@ -1,16 +1,9 @@
-.header {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: var(--z-fixed);
-}
-
 .nav {
     display: flex;
     height: var(--header-height);
     justify-content: space-between;
     align-items: center;
+    font-weight: var(--font-regular);
 
     &__logo {
         display: flex;
@@ -31,11 +24,15 @@
         height: 100%;
         padding: 2rem;
         background-color: var(--background-aside-menu);
+        background-image: url(/assets/img/my-logos/particles.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         transition: .5s;
     }
 
     &__item {
-        margin-bottom: var(--m-3);
+        margin-bottom: var(--m-2);
     }
 
     &__link {
@@ -81,6 +78,7 @@
         }
     }
 }
+
 /*Active menu*/
 .active::after {
     position: absolute;

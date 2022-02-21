@@ -5,12 +5,12 @@
   --primary-color: #ffc600;
   --button-color: #ffc600;
   --background-aside-menu: #000000;
-  --color-aside-menu: #ffffff;
-  --button-color-alt: #ffcf22;
+  --color-aside-menu: #ececec;
+  --button-color-alt: #e7b500;
   --title-color: #000000;
   --text-color: #000000;
   --text-color-light: #ffffff;
-  --body-color: #ffffff;
+  --body-color: #fdfdfd;
   --container-color: #ffffff;
   --border-color: #ffc600;
   /*========== Font and typography ==========*/
@@ -30,12 +30,12 @@
   --font-medium: 500;
   --font-bold: 700;
   /*========== Marges ==========*/
-  --m-0-5: 0.5rem;
-  --m-1: 1rem;
-  --m-1-5: 1.5rem;
-  --m-2: 2rem;
-  --m-2-5: 2.5rem;
-  --m-3: 3rem;
+  --m-0-5: 0.8rem;
+  --m-1: 1.6rem;
+  --m-1-5: 2.4rem;
+  --m-2: 3.2rem;
+  --m-2-5: 4.0rem;
+  --m-3: 4.8rem;
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
@@ -109,6 +109,16 @@ button {
   outline: none;
 }
 
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  -webkit-box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+          box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+}
+
 .container {
   min-width: 300px;
   max-width: 1024px;
@@ -116,58 +126,58 @@ button {
   padding-right: 1rem;
 }
 
-/*=============== THEME ===============*/
-/*========== Variables Dark theme ==========*/
-body.dark-theme {
-  --primary-color: hsl(31, 76%, 74%);
-  --button-color: hsl(0, 0%, 24%);
-  --button-color-alt: hsl(0, 0%, 28%);
-  --title-color: hsl(0, 0%, 95%);
-  --text-color: hsl(0, 0%, 75%);
-  --body-color: hsl(0, 0%, 12%);
-  --container-color: hsl(0, 0%, 16%);
-  --border-color: hsl(0, 0%, 20%);
+.section-title {
+  position: relative;
+  font-size: var(--h2-font-size);
+  color: var(--primary-color);
+  margin-top: var(--m-1);
+  margin-bottom: var(--m-2);
+  text-align: center;
 }
 
-/*========== Button Dark/Light ==========*/
-.change-theme {
-  color: var(--title-color);
-  font-size: 1.25rem;
-  cursor: pointer;
-}
-
-/*========== 
-    Color changes in some parts of 
-    the website, in dark theme 
-==========*/
-.dark-theme .change-theme,
-.dark-theme .nav__toggle,
-.dark-theme .nav__shop,
-.dark-theme .button--gray {
-  color: #262626;
-}
-
-.dark-theme .scroll-header {
-  -webkit-box-shadow: 0 1px 4px rgba(10, 10, 10, 0.3);
-          box-shadow: 0 1px 4px rgba(10, 10, 10, 0.3);
-}
-
-.scroll-header .change-theme,
-.scroll-header .nav__toggle,
-.scroll-header .nav__shop {
-  color: var(--title-color);
-}
-
-.dark-theme::-webkit-scrollbar {
-  background: #4d4d4d;
-}
-
-.header {
-  width: 100%;
-  position: fixed;
-  top: 0;
+.section-title::after {
+  position: relative;
+  content: "";
+  width: 64px;
+  height: 0.3rem;
   left: 0;
-  z-index: var(--z-fixed);
+  right: 0;
+  margin: auto;
+  top: 3.2rem;
+  background-color: var(--primary-color);
+}
+
+.section {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.bd-grid {
+  max-width: 1024px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  grid-column-gap: 3.2rem;
+  width: calc(100% - 3.2rem);
+  margin-left: var(--m-2);
+  margin-right: var(--m-2);
+}
+
+/*=============== BUTTONS ===============*/
+.button {
+  display: inline-block;
+  background-color: var(--button-color);
+  color: #FFF;
+  padding: 1rem 2rem;
+  font-weight: var(--font-medium);
+  border-radius: 4px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.button:hover {
+  background-color: var(--button-color-alt);
 }
 
 .nav {
@@ -181,6 +191,7 @@ body.dark-theme {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: var(--font-regular);
 }
 
 .nav__logo {
@@ -210,12 +221,16 @@ body.dark-theme {
   height: 100%;
   padding: 2rem;
   background-color: var(--background-aside-menu);
+  background-image: url(/assets/img/my-logos/particles.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
 .nav__item {
-  margin-bottom: var(--m-3);
+  margin-bottom: var(--m-2);
 }
 
 .nav__link {
@@ -281,5 +296,56 @@ body.dark-theme {
 /*=== Show menu ===*/
 .show {
   right: 0;
+}
+
+.home {
+  margin: var(--header-height) auto 0;
+  height: calc(100vh - 4.8rem);
+  row-gap: 1.6rem;
+}
+
+.home__data {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.home__title {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--m-2);
+}
+
+.home__title--color {
+  color: var(--primary-color);
+}
+
+.home__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home__social-icon {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: var(--m-1);
+  font-size: 2.4rem;
+}
+
+.home__social-icon:hover {
+  color: var(--primary-color);
+}
+
+.home__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 250px;
 }
 /*# sourceMappingURL=styles.css.map */
