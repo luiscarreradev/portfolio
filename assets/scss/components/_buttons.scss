@@ -2,13 +2,22 @@
 .button{
     display: inline-block;
     background-color: var(--button-color);
-    padding: .7rem 2.2rem;
+    width: 120px;
+    align-self: center;
+    padding: 1.3rem 3rem;
     font-size: var(--small-font-size);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-bold);
     border-radius: 4px;
     transition: .3s;
 
     &:hover{
         background-color: var(--button-color-alt);
+    }
+
+    &--cv{
+        display: flex;
+        width: 200px;
+        justify-content: space-between;
+        align-items: center;
     }
 };

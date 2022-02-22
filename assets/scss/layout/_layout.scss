@@ -1,35 +1,35 @@
 
 .container{
+    margin: 0 auto;
     min-width: 300px;
     max-width: 1024px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.wrapper{
+    background-color: var(--background-section);
 }
 
 .section-title{
     position: relative;
     font-size: var(--h2-font-size);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-bold);
     color: var(--text-color);
-    padding-top: 5rem;
+    padding-top: 6rem;
     margin-bottom: var(--m-2);
     text-align: center;
 }
 
 .section-title::after{
-    position: relative;
+    position: absolute;
     content: "";
-    width: 64px;
+    width: 80px;
     height: 0.3rem;
     left: 0;
     right: 0;
     margin: auto;
-    top: 3.2rem;
+    top: 9.5rem;
     background-color: var(--primary-color);
 }
 
-.section{
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-    background-color: var(--color-aside-menu);
-}

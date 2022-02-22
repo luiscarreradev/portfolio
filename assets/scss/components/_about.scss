@@ -1,3 +1,28 @@
 .about{
-    height: 100vh;
+    height: 100%;
+
+    &__data{
+        text-align: center;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        grid-template-areas:
+        'picture'
+        'info';
+        row-gap: 2rem;
+    }
+
+    &__img{
+        margin: 0 auto;
+        grid-area: picture;
+        min-width: 290px;
+        max-width: 500px;
+    }
+
+    &__info{
+        grid-area: info;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        padding-bottom: 6rem;
+    }
 }

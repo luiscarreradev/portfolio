@@ -5,13 +5,17 @@
 .home{
     height: 100vh;
     display: grid;
-    padding-top: 5rem;
-    grid-template-rows: auto auto;
+    padding-top: 7rem;
+    grid-template-rows: auto 1fr;
     grid-template-areas:
-    'info info'
-    'icons picture';
+    'picture'
+    'info';
 
     &__data{
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+        text-align: center;
         align-self: center;
         grid-area: info;
     }
@@ -19,37 +23,18 @@
     &__title{
         font-size: var(--h1-font-size);
         font-weight: var(--font-bold);
-        margin-bottom: var(--m-1-5);
 
         &--color{
             position: relative;
         }
     }
 
-    &__social{
-        display: flex;
-        grid-area: icons;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    &__social-icon{
-        width: max-content;
-        margin-bottom: var(--m-1);
-        font-size: 2.2rem;
-
-        &:hover{
-            color: var(--primary-color);
-        }
-    }
-
     &__img{
         display: flex;
-        min-width: 170px;
-        max-width: 300px;
-        margin-left: 2rem;
+        width: 174px;
+        max-width: 243px;
         grid-area: picture;
         align-items: center;
-        justify-self: end;
+        justify-self: center;
     }
 }
