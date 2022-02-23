@@ -1,0 +1,69 @@
+@media screen and (min-width: 769px){
+    .nav{
+
+        &__logo{
+            width: 180px;
+        }
+
+        &__img--sm{
+            display: none;
+        }
+
+        &__img--lg{
+            display: inline-block;
+        }
+
+        &__list{
+            position: relative;
+            display: flex;
+            align-items: center;
+            column-gap: 2rem;
+            font-size: 1.6rem;
+            font-weight:  var(--font-regular);
+            margin-right: var(--m-1);
+        }
+
+        &__link{
+            color: var(--text-color);
+
+            &:hover::after{
+                height: 0.3rem;
+            }
+        }
+
+        &__icon--menu{
+            display: none;
+        }
+    }
+
+    .section-title::after{
+    top: 9.7rem;
+    }
+
+    .button--cv{
+        width: 230px;
+        margin-top: var(--m-1-5);
+        padding: 1.5rem 3rem;
+        place-self: start;
+    }
+
+    .home{
+        padding-right: 4rem;
+        padding-left: 4rem;
+        column-gap: 5rem;
+        grid-template-areas:
+        'info picture'
+        'info picture';
+
+        &__data{
+            text-align: start;
+            align-items: start;
+            row-gap: 4rem;
+        }
+
+        &__img{
+            width: 400px;
+            max-width: 500px;
+        }
+    }
+}

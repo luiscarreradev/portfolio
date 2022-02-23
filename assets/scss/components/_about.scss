@@ -1,5 +1,6 @@
 .about{
     height: 100%;
+    text-align: center;
 
     &__data{
         text-align: center;
@@ -24,5 +25,14 @@
         flex-direction: column;
         row-gap: 2rem;
         padding-bottom: 6rem;
+    }
+
+    &__subtitle{
+        font-size: var(--h3-font-size);
+        font-weight: var(--font-bold);
+    }
+
+    &__button{
+        margin-top: var(--m-1);
     }
 }

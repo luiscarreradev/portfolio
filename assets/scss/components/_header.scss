@@ -4,6 +4,7 @@
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
+    background-color: var(--body-color);
     box-shadow: 0 1px 4px rgba(146, 161, 176, .15);
 }
 
@@ -20,30 +21,37 @@
         width: 25px;
     }
 
+    &__img--lg{
+        display: none;
+    }
+
     &__menu {
         display: flex;
         justify-content: space-between;
     }
 
-    &__list {
-        position: fixed;
-        top: var(--header-height);
-        right: -100%;
-        width: 80%;
-        height: 100%;
-        padding: 2rem;
-        background-color: var(--background-aside-menu);
-        background-image: url(/assets/img/my-logos/particles.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        transition: .5s;
-    }
+    @media screen and (max-width: 768px){
+        &__list {
+            position: fixed;
+            top: var(--header-height);
+            right: -100%;
+            width: 80%;
+            height: 100%;
+            padding: 2rem;
+            background-color: var(--background-aside-menu);
+            background-image: url(/assets/img/my-logos/particles.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: .5s;
+        }
 
-    &__item {
-        margin-bottom: var(--m-2);
+        &__item {
+            margin-bottom: var(--m-2);
+        }
+    
     }
-
+    
     &__link {
         position: relative;
         color: #fff;
@@ -63,10 +71,15 @@
         }
     }
 
+
     &__btns {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    &__theme{
+        margin-bottom: -5px;
     }
 
     &__icon {

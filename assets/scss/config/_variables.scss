@@ -20,20 +20,20 @@
     --body-font: 'Roboto Mono', monospace;
 
     --biggest-font-size: 3.2rem;
-    --h1-font-size: 2.5rem;
-    --h2-font-size: 2.5rem;
+    --h1-font-size: clamp(3rem, 4vw, 6rem);
+    --h2-font-size: 3rem;
     --h3-font-size: 1.7rem;
     --normal-font-size: 1.5rem;
     --small-font-size: 1.3rem;
     --smaller-font-size: 1.2rem;
 
     // Responsive typography
-    @media screen and (min-width: 968px){
-        --biggest-font-size: 4.8rem;
-        --h1-font-size: 3.6rem;
-        --h2-font-size: 2.4rem;
-        --h3-font-size: 2rem;
-        --normal-font-size: 1.6rem;
+    @media screen and (min-width: 769px){
+        --biggest-font-size: 6rem;
+        --h1-font-size: clamp(3rem, 4vw, 6rem);
+        --h2-font-size: 4rem;
+        --h3-font-size: 3rem;
+        --normal-font-size: 2rem;
         --small-font-size: 1.4rem;
         --smaller-font-size: 1.3rem;
     }

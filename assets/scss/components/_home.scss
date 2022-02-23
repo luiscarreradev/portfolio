@@ -31,8 +31,8 @@
 
     &__img{
         display: flex;
-        width: 174px;
-        max-width: 243px;
+        min-width: 174px;
+        max-width: 200px;
         grid-area: picture;
         align-items: center;
         justify-self: center;

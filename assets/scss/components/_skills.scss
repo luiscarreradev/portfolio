@@ -1,0 +1,32 @@
+.skills{
+    position: relative;
+    text-align: center;
+    height: 100%;
+
+    &__subtitle{
+        font-size: var(--h3-font-size);
+        font-weight: var(--font-bold);
+        margin-top: var(--m-3);
+    }
+
+    &__list{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        justify-items: center;
+        align-items: center;
+        gap: 4rem;
+
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: space-around;
+        // column-gap: 2rem;
+        // row-gap: 2rem;
+    }
+
+    &__img{
+        width: 120px;
+        max-width: 300px;
+    }
+
+}

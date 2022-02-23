@@ -2,7 +2,7 @@
 .container{
     margin: 0 auto;
     min-width: 300px;
-    max-width: 1024px;
+    max-width: 1440px;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
@@ -12,6 +12,7 @@
 }
 
 .section-title{
+    display: inline-block;
     position: relative;
     font-size: var(--h2-font-size);
     font-weight: var(--font-bold);
@@ -19,17 +20,26 @@
     padding-top: 6rem;
     margin-bottom: var(--m-2);
     text-align: center;
+    z-index: var(--z-tooltip);
+
 }
 
 .section-title::after{
     position: absolute;
     content: "";
-    width: 80px;
-    height: 0.3rem;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 9.5rem;
+    width: 110%;
+    height: 0.7rem;
+    left: -5%;
+    top: 8.8rem;
     background-color: var(--primary-color);
+    z-index: var(--z-back);
+    transform: skew(-20deg) rotate(-2deg);
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    margin-bottom: var(--m-2);
 }
 
