@@ -48,22 +48,25 @@
     }
 
     .home{
+        height: 100vh;
         padding-right: 4rem;
         padding-left: 4rem;
         column-gap: 5rem;
+        grid-template-rows: 12rem 1fr;
         grid-template-areas:
+        'header-height header-height'
         'info picture'
         'info picture';
 
-        &__data{
+        &__wrapper{
             text-align: start;
             align-items: start;
             row-gap: 4rem;
         }
 
         &__img{
-            width: 400px;
-            max-width: 500px;
+            width: 300px;
+            max-width: 400px;
         }
     }
 }
