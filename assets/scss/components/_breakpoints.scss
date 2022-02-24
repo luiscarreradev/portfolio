@@ -52,21 +52,29 @@
         padding-right: 4rem;
         padding-left: 4rem;
         column-gap: 5rem;
-        grid-template-rows: 12rem 1fr;
+        grid-template-rows: 1fr auto 1fr;
         grid-template-areas:
-        'header-height header-height'
-        'info picture'
-        'info picture';
+        'top'
+        'wrapper'
+        'bottom';
 
         &__wrapper{
-            text-align: start;
-            align-items: start;
-            row-gap: 4rem;
+            align-items: center;
+            column-gap: 6rem;
+            grid-template-rows: auto;
+            grid-template-areas:
+            'info picture'
         }
 
         &__img{
             width: 300px;
             max-width: 400px;
+        }
+
+        &__data{
+            height: 300px;
+            text-align: start;
+            align-items: flex-start;
         }
     }
 }
