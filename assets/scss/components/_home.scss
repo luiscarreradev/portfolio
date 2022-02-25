@@ -25,9 +25,9 @@
     }
 
     &__img{
+        grid-area: picture;
         display: flex;
         max-width: 175px;
-        grid-area: picture;
         align-items: center;
         justify-self: center;
     }

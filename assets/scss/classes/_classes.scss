@@ -9,6 +9,7 @@
 
 .wrapper{
     background-color: var(--background-section);
+    min-width: 300px;
     width: 100vw;
 }
 
@@ -43,4 +44,29 @@
     row-gap: 3rem;
     margin-bottom: var(--m-2);
 }
+
+.card {
+    border: 1px solid #222;
+    padding: 1.2rem;
+    text-align: center;
+    font-weight: 300;
+    box-shadow: 0 0 8px rgba(43,47,62,.1);
+    transition: 1s all ease;
+    box-sizing: border-box;
+
+    &__property {
+        padding: 10rem 0;
+        background-color: var(--text-color);
+        color: var(--primary-color);
+        border: 2px solid #222;
+        text-align: center;
+        font-size: var(--h3-font-size);
+        letter-spacing: 1px;
+        font-weight: 400;
+        cursor: pointer;
+        outline: none;
+        transition: 1s all ease;
+      }
+  }
+
 

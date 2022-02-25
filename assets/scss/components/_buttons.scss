@@ -2,12 +2,11 @@
 .button{
     display: inline-block;
     background-color: var(--button-color);
+    color: var(--text-color);
     width: 120px;
-    align-self: center;
     padding: 1.3rem 3rem;
     font-size: var(--small-font-size);
     font-weight: var(--font-bold);
-    border-radius: 4px;
     transition: .3s;
 
     &:hover{

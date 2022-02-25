@@ -71,7 +71,7 @@
             <section class="home container" id="home">
                 <div class="home__wrapper">
                     <figure class="home__img">
-                        <img src="./assets/img/my-logos/my-picture3-min.png" alt="">
+                        <img src="./assets/img/my-logos/my-picture3-min.png" alt="profile picture">
                     </figure>
     
                     <div class="home__data">
@@ -87,7 +87,7 @@
 
             <section class="wrapper" id="about">
                 <div class="about container">
-                    <h2 class="section-title">About</h2>
+                    <h2 class="about__title section-title">About</h2>
     
                     <div class="about__data">
                         <figure class="about__img">
@@ -108,46 +108,47 @@
 
             <section class="skills container" id="skills">
                 <h2 class="section-title skills__title">Skills</h2>
-
-                <article class="skills__frontend article">
-                    <details>
-                        <summary class="skills__subtitle">Frontend</summary>
-                        <div class="skills__list">
-                            <img class="skills__img" src="./assets/img/my-logos/html5.png" alt="html">
-                            <img class="skills__img" src="./assets/img/my-logos/css.png" alt="css">
-                            <img class="skills__img" src="./assets/img/my-logos/javascript.png" alt="javascript">
-                            <img class="skills__img" src="./assets/img/my-logos/bootstrap.png" alt="bootstrap">
-                            <img class="skills__img" src="./assets/img/my-logos/sass.png" alt="sass">
-                            <img class="skills__img" src="./assets/img/my-logos/webpack.png" alt="webpack">
-                            <img class="skills__img" src="./assets/img/my-logos/reactjs.png" alt="reactjs">
-                            <img class="skills__img" src="./assets/img/my-logos/redux.png" alt="redux">
-                            <img class="skills__img" src="./assets/img/my-logos/nextjs.png" alt="nextjs">
-                        </div>
-                    </details>
-                </article>
-
-                <article class="skills__backend article">
-                    <details>
-                        <summary class="skills__subtitle">Backend</summary>
-                        <div class="skills__list">
-                            <img class="skills__img" src="./assets/img/my-logos/nodejs.png" alt="nodejs">
-                            <img class="skills__img" src="./assets/img/my-logos/expressjs.png" alt="expressjs">
-                            <img class="skills__img" src="./assets/img/my-logos/postgresql.png" alt="postgresql">
-                        </div>
-                    </details>
-                </article>
-
-                <article class="skills__others article">
-                    <details>
-                        <summary class="skills__subtitle">Others</summary>
-                        <div class="skills__list">
-                            <img class="skills__img" src="./assets/img/my-logos/git.png" alt="git">
-                            <img class="skills__img" src="./assets/img/my-logos/vscode.png" alt="vscode">
-                            <img class="skills__img" src="./assets/img/my-logos/photoshop.png" alt="photoshop">
-                            <img class="skills__img" src="./assets/img/my-logos/scrum.png" alt="scrum">
-                        </div>
-                    </details>
-                </article>
+                
+                <div class="skills__wrapper">
+                    <article class="skills__article article">
+                        <details class="skills__card card">
+                            <summary class="skills__frontend card__property">Frontend</summary>
+                            <div class="skills__list">
+                                <img class="skills__img" src="./assets/img/my-logos/html5.png" alt="html">
+                                <img class="skills__img" src="./assets/img/my-logos/css.png" alt="css">
+                                <img class="skills__img" src="./assets/img/my-logos/javascript.png" alt="javascript">
+                                <img class="skills__img" src="./assets/img/my-logos/bootstrap.png" alt="bootstrap">
+                                <img class="skills__img" src="./assets/img/my-logos/sass.png" alt="sass">
+                                <img class="skills__img" src="./assets/img/my-logos/webpack.png" alt="webpack">
+                                <img class="skills__img" src="./assets/img/my-logos/reactjs.png" alt="reactjs">
+                                <img class="skills__img" src="./assets/img/my-logos/redux.png" alt="redux">
+                                <img class="skills__img" src="./assets/img/my-logos/nextjs.png" alt="nextjs">
+                            </div>
+                        </details>
+                    </article>
+    
+                    <article class="skills__article skills__article--backend article">
+                        <details class="skills__card card">
+                            <summary class="skills__backend card__property">Backend</summary>
+                            <div class="skills__list">
+                                <img class="skills__img" src="./assets/img/my-logos/nodejs.png" alt="nodejs">
+                                <img class="skills__img" src="./assets/img/my-logos/expressjs.png" alt="expressjs">
+                                <img class="skills__img" src="./assets/img/my-logos/postgresql.png" alt="postgresql">
+                            </div>
+                        </details>
+                    </article>
+    
+                    <article class="skills__article article">
+                        <details class="skills__card card">
+                            <summary class="skills__others card__property">Others</summary>
+                            <div class="skills__list">
+                                <img class="skills__img" src="./assets/img/my-logos/git.png" alt="git">
+                                <img class="skills__img" src="./assets/img/my-logos/photoshop.png" alt="photoshop">
+                                <img class="skills__img" src="./assets/img/my-logos/scrum.png" alt="scrum">
+                            </div>
+                        </details>
+                    </article>
+                </div>
             </section>
             
         </main>

@@ -1,5 +1,6 @@
 .about{
     height: 100%;
+    width: 100%;
     text-align: center;
 
     &__data{
@@ -13,15 +14,15 @@
     }
 
     &__img{
-        margin: 0 auto;
         grid-area: picture;
-        min-width: 290px;
-        max-width: 500px;
+        margin: 0 auto;
+        max-width: 350px;
     }
 
     &__info{
         grid-area: info;
         display: flex;
+        align-items: center;
         flex-direction: column;
         row-gap: 2rem;
         padding-bottom: 6rem;
