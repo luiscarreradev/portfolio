@@ -1,0 +1,13 @@
+.projects{
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__article{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 2rem;
+    }
+}

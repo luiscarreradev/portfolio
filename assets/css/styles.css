@@ -196,7 +196,7 @@ button {
   display: inline-block;
   background-color: var(--button-color);
   color: var(--text-color);
-  width: 120px;
+  width: auto;
   padding: 1.3rem 3rem;
   font-size: var(--small-font-size);
   font-weight: var(--font-bold);
@@ -525,6 +525,25 @@ button {
 
 .skills__img {
   max-width: 85px;
+}
+
+.projects__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects__article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
 }
 
 @media screen and (min-width: 769px) {
