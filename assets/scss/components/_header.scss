@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--body-color);
+    background-color: var(--tertiary-color);
     box-shadow: 0 1px 4px rgba(146, 161, 176, .15);
 }
 
@@ -38,7 +38,7 @@
             width: 80%;
             height: 100%;
             padding: 2rem;
-            background-color: var(--background-aside-menu);
+            background-color: var(--dark-gray);
             background-image: url(/assets/img/my-logos/particles.png);
             background-position: center;
             background-size: cover;
@@ -54,7 +54,7 @@
     
     &__link {
         position: relative;
-        color: #fff;
+        color: var(--light-color);
 
         &:hover {
             position: relative;

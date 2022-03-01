@@ -1,13 +1,41 @@
 .projects{
+    height: 100%;
+    text-align: center;
 
+    &__title{
+        margin-bottom: 10rem;
+    }
     &__wrapper{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        row-gap: 8rem;
+        padding: 0 1rem 10rem;
     }
 
     &__article{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        justify-items: center;
         column-gap: 2rem;
     }
+
+    &__img-container{
+        width: 290px;
+    }
+
+    &__data{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.5rem;
+    }
+
+    &__buttons-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem 2rem;
+    }
+
 }

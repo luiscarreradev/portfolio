@@ -3,17 +3,13 @@
     --header-height: 5rem;
 
     /*========== Colors ==========*/
-    --primary-color: #ffc600;
-    --button-color: #ffc600;
-    --background-aside-menu: #000000;
-    --background-section: #DFDEE3;
-    --button-color-alt: #ffcd16;
-    --title-color: #000000;
-    --text-color: #1B1A33;
-    --text-color-light: #ffffff;
-    --body-color: #f4f6f6;
-    --container-color: #ffffff;
-    --border-color: #ffc600;
+    --primary-color: #ffc800;
+    --secondary-color: #1B1A33;
+    --tertiary-color: #f4f6f6;
+    --gray: #DCDEE1;
+    --dark-gray: #3A3B4E;
+    --light-color: #ffffff;
+    --dark-color: #000000;
 
     /*========== Font and typography ==========*/
     /* 1rem = 10px */
@@ -28,7 +24,7 @@
     --smaller-font-size: 1.2rem;
 
     // Responsive typography
-    @media screen and (min-width: 769px){
+    @media screen and (min-width: 1000px){
         --biggest-font-size: 6rem;
         --h1-font-size: clamp(3rem, 4vw, 6rem);
         --h2-font-size: 4rem;

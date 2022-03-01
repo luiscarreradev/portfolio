@@ -1,23 +1,42 @@
 /*=============== BUTTONS ===============*/
 .button{
-    display: inline-block;
-    background-color: var(--button-color);
-    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     width: auto;
     padding: 1.3rem 3rem;
     font-size: var(--small-font-size);
     font-weight: var(--font-bold);
+    border: 3px solid var(--primary-color);
     transition: .3s;
 
     &:hover{
-        background-color: var(--button-color-alt);
+        background-color: #ffd84b;
+        border: 3px solid var(--primary-color);
     }
 
     &--cv{
         display: flex;
-        width: 200px;
+        column-gap: 1rem;
         margin-top: var(--m-0-5);
         justify-content: space-between;
         align-items: center;
+    }
+
+    &--repo{
+        width: auto;
+        padding: 1.3rem 3rem;
+        font-size: var(--small-font-size);
+        font-weight: var(--font-bold);
+        transition: .3s;
+        border: 3px solid var(--secondary-color);
+
+        &:hover{
+            background-color: var(--secondary-color);
+            color: var(--tertiary-color);
+        }
     }
 };

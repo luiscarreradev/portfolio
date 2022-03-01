@@ -24,7 +24,7 @@
         }
 
         &__link{
-            color: var(--text-color);
+            color: var(--secondary-color);
 
             &:hover::after{
                 height: 0.3rem;
@@ -41,7 +41,6 @@
     }
 
     .button--cv{
-        width: 230px;
         margin-top: var(--m-1-5);
         padding: 1.5rem 3rem;
         place-self: start;
@@ -111,11 +110,43 @@
     .skills{
 
         &__article{
-            flex: 0 1 30%;
+            flex: 0 1 31%;
 
             &--backend{
                 margin: 0 2.5rem;
             }
+        }
+    }
+
+    .projects{
+        height: 100%;
+        text-align: center;
+    
+        &__title{
+            margin-bottom: 10rem;
+        }
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 8rem;
+        }
+    
+        &__article{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto;
+            justify-items: center;
+            column-gap: 3em;
+        }
+    
+        &__img-container{
+            width: 520px;
+        }
+
+        &__data{
+            text-align: start;
+            align-items: flex-start;
         }
     }
 }

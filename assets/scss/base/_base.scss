@@ -21,13 +21,13 @@ input{
 
 body{
     margin: 0;
-    background-color: var(--body-color);
-    color: var(--text-color);
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
     transition: .4s; /*For animation dark mode*/
 }
 
 h1,h2,h3,h4{
-    color: var(--title-color);
+    color: var(--secondary-color);
     font-weight: var(--font-medium);
 }
 
@@ -36,8 +36,9 @@ ul{
 }
 
 a{
+    cursor: pointer;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--secondary-color);
 }
 
 img{
@@ -48,5 +49,9 @@ img{
 button{
     cursor: pointer;
     border: none;
-    outline: none;
+}
+
+hr{
+    display: inline-block;
+    width: 75%;
 }
