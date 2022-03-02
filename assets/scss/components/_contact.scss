@@ -1,0 +1,25 @@
+.contact{
+    height: 100%;
+    text-align: center;
+
+    &__title{
+        margin-bottom: 10rem;
+    }
+
+    &__wrapper{
+        margin: 0 auto;
+        min-width: 280px;
+        max-width: 800px;
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: minmax(280px, 900px);
+        grid-template-rows: 300px 900px;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+    }
+}
