@@ -14,7 +14,8 @@ html{
 
 body,
 button,
-input{
+input,
+textarea{
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
 }
@@ -54,9 +55,4 @@ button{
 hr{
     display: inline-block;
     width: 75%;
-}
-
-input, textarea{
-    display: inline-block;
-    width: 100%;
 }

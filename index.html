@@ -95,7 +95,7 @@
                         </figure>
 
                         <div class="about__info">
-                            <h3 class="about__subtitle">I am Luis</h3>
+                            <h3 class="about__subtitle">I am Luis 🤓</h3>
                             <p class="about__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo perspiciatis consequatur maxime itaque, nihil excepturi consectetur unde autem temporibus.</p>
                             <p class="about__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo perspiciatis consequatur maxime itaque, nihil excepturi consectetur unde autem temporibus, vitae cumque voluptatem culpa voluptas.</p>
                             <a href="#" class="about__button button">Contact</a>
@@ -160,14 +160,48 @@
                     
                     <article class="projects__article">
                         <figure class="projects__img-container">
-                            <img class="projects__img" src="./assets/img/my-logos/portfolio.png" alt="image of project">
+                            <img class="projects__img" src="./assets/img/my-logos/blog.png" alt="image of project">
                         </figure>
 
                         <div class="projects__data">
                             <h3 class="projects__subtitle">Blog</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quae dolorum, accusamus laborum eos at assumenda molestias obcaecati commodi sit odit non blanditiis consequatur eligendi officia voluptas dicta error eum?</p>
                             <div class="projects__buttons-container">
-                                <a class="projects__button button">Live version</a>
+                                <a class="projects__button projects__button--live button">Live version</a>
+                                <a class="projects__button button--repo">Repository</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <hr>
+
+                    <article class="projects__article">
+                        <figure class="projects__img-container">
+                            <img class="projects__img" src="./assets/img/my-logos/landing-fcc.png" alt="image of project">
+                        </figure>
+
+                        <div class="projects__data">
+                            <h3 class="projects__subtitle">Original Trombones</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quae dolorum, accusamus laborum eos at assumenda molestias obcaecati commodi sit odit non blanditiis consequatur eligendi officia voluptas dicta error eum?</p>
+                            <div class="projects__buttons-container">
+                                <a class="projects__button projects__button--live button">Live version</a>
+                                <a class="projects__button button--repo">Repository</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <hr>
+
+                    <article class="projects__article">
+                        <figure class="projects__img-container">
+                            <img class="projects__img" src="./assets/img/my-logos/tribute.png" alt="image of project">
+                        </figure>
+
+                        <div class="projects__data">
+                            <h3 class="projects__subtitle">Dr. Norman Bourlage</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quae dolorum, accusamus laborum eos at assumenda molestias obcaecati commodi sit odit non blanditiis consequatur eligendi officia voluptas dicta error eum?</p>
+                            <div class="projects__buttons-container">
+                                <a class="projects__button projects__button--live button">Live version</a>
                                 <a class="projects__button button--repo">Repository</a>
                             </div>
                         </div>
@@ -181,60 +215,65 @@
                         </figure>
 
                         <div class="projects__data">
-                            <h3 class="projects__subtitle">Paper, stone and scissor</h3>
+                            <h3 class="projects__subtitle">Portfolio</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quae dolorum, accusamus laborum eos at assumenda molestias obcaecati commodi sit odit non blanditiis consequatur eligendi officia voluptas dicta error eum?</p>
                             <div class="projects__buttons-container">
-                                <a class="projects__button button">Live version</a>
+                                <a class="projects__button projects__button--live button">Live version</a>
                                 <a class="projects__button button--repo">Repository</a>
                             </div>
                         </div>
                     </article>
 
-                    <hr>
-
-                    <article class="projects__article">
-                        <figure class="projects__img-container">
-                            <img class="projects__img" src="./assets/img/my-logos/portfolio.png" alt="image of project">
-                        </figure>
-
-                        <div class="projects__data">
-                            <h3 class="projects__subtitle">E-commerce</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quae dolorum, accusamus laborum eos at assumenda molestias obcaecati commodi sit odit non blanditiis consequatur eligendi officia voluptas dicta error eum?</p>
-                            <div class="projects__buttons-container">
-                                <a class="projects__button button">Live version</a>
-                                <a class="projects__button button--repo">Repository</a>
-                            </div>
-                        </div>
-                    </article>
                 </div>
             </section>
 
             <!--===== CONTACT =====-->
 
-            <section class="contact container wrapper" id="contact">
-                <h2 class="contact__title section-title">Contact</h2>
-
-                <div class="contact___wrapper">
-                    <div class="contact__info">
-                        <span>CONTACT ME</span>
-                        <h3 class="contact__subtitle">Let's work<br>together</h3>
-                    </div>
-
-                    <form action="#" class="contact__form">
-                        <h4>Send me a Message</h4>
-                        <div class="contact__inputs">
-                            <input type="text" name="name">
-                            <input type="email" name="email">
-                            <textarea name="textarea" id="textarea" cols="0" rows="10"></textarea>
-                            <button type="submit" class="button">Send Message</button>
+            <section class="wrapper" id="contact">
+                <div class="contact container">
+                    <h2 class="contact__title section-title">Contact</h2>
+    
+                    <div class="contact__wrapper">
+                        <div class="contact__info">
+                            <span>CONTACT ME</span>
+                            <h3 class="contact__subtitle">Let's work<br>together! 🤝</h3>
                         </div>
-                    </form>
+    
+                        <form action="mailto:luiscarreramv@gmail.com" class="contact__form" autocomplete="on">
+                            <h4 class="contact__title-form">Send me a Message</h4>
+                            <div class="contact__inputs">
+                                <input class="contact__input" type="text" name="name" placeholder="Name" required>
+                                <input class="contact__input" type="email" name="email" placeholder="Email" required>
+                                <textarea class="contact__input" name="textarea" id="textarea" cols="0" rows="6"></textarea>
+    
+                                <input class="contact__button button" type="submit" value="Send Massage">
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </section>
 
         </main>
 
         <!--==================== FOOTER ====================-->
+
+        <footer class="wrapper wrapper--dark">
+            <div class="footer container">
+                <a class="footer__logo" href="https://www.linkedin.com/in/luiscarreramv" target="_blanck">Powered by
+                    <img class="footer__img" src="./assets/img/my-logos/luiswhite-min.png" alt="logo luis carrera">
+                </a>
+                <div class="footer__social">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="https://www.linkedin.com/in/luiscarreramv/" target="__blanck" class="footer__link"><i class='bx bxl-linkedin-square footer__icon'></i></a></li>
+                        <li class="footer__item"><a href="https://github.com/luiscarreramv" target="__blanck" class="footer__link"><i class='bx bxl-github footer__icon'></i></a></li>
+                        <li class="footer__item"><a href="https://twitter.com/luiscarreramv" target="__blanck" class="footer__link"><i class='bx bxl-twitter footer__icon' ></i></a></li>
+                        <li class="footer__item"><a href="https://www.instagram.com/luiscarreramv/" target="__blanck" class="footer__link"><i class='bx bxl-instagram-alt footer__icon'></i></a></li>
+                        <li class="footer__item"><a href="https://www.youtube.com/c/RaceValley" target="__blanck" class="footer__link"><i class='bx bxl-youtube footer__icon'></i></a></li>
+                    </ul>
+                    <p class="footer__text">© Copyright 2022 - <span>Luis Carrera</span></p>
+                </div>
+            </div>
+        </footer>
 
         <!--=============== SCROLL UP ===============-->
 

@@ -1,0 +1,49 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    row-gap: 3rem;
+    height: 100%;
+    padding: 3.5rem 0;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+
+    &__logo{
+        width: 270px;
+        font-size: 1.4rem;
+        color: var(--tertiary-color);
+    }
+
+    &__social{
+        display: flex;
+        flex-direction: column;
+        row-gap: .6rem;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: center;
+        column-gap: 2.5rem;
+    }
+
+    &__icon{
+        color: var(--tertiary-color);
+        font-size: 2rem;
+        transition: color .4s;
+
+        &:hover{
+            color: var(--primary-color);
+        }
+    }
+
+    &__text{
+        font-size: 1.2rem;
+        color: rgba(211, 211, 211, 0.739);
+
+        &>span{
+            color: var(--tertiary-color);
+        }
+    }
+}

@@ -147,6 +147,63 @@
         &__data{
             text-align: start;
             align-items: flex-start;
+
+            &>p{
+                padding-right: 1rem;
+            }
         }
     }
+
+    .contact{
+        &__wrapper{
+            flex-direction: row;
+        }
+
+        &__info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            place-self: center;
+            margin-right: 5rem;
+            flex: 1 1 auto;
+
+            &>span{
+                font-weight: var(--font-medium);
+                color: #7e7e7d;
+                font-size: 1.4rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+
+        &__subtitle{
+            font-size: var(--biggest-font-size);
+            font-weight: var(--font-bold);
+            line-height: 1.1;
+        }
+        
+        &__form{
+            flex: 2 1 auto;
+        }
+    }
+
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5rem 3.2rem;
+
+        &__logo{
+            width: 320px;
+            font-size: var(--small-font-size);
+        }
+
+        &__icon{
+            font-size: 3rem;
+        }
+
+        &__text{
+            font-size: 1.4rem;
+        }
+    }
+
 }

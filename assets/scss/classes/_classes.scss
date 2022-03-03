@@ -11,6 +11,10 @@
     background-color: var(--gray);
     min-width: 300px;
     width: 100%;
+
+    &--dark{
+        background-color: var(--dark-color);
+    }
 }
 
 .section-title{

@@ -7,15 +7,15 @@
     background-color: var(--primary-color);
     color: var(--secondary-color);
     width: auto;
-    padding: 1.3rem 3rem;
+    padding: 1.2rem 3rem;
     font-size: var(--small-font-size);
     font-weight: var(--font-bold);
     border: 3px solid var(--primary-color);
     transition: .3s;
 
     &:hover{
-        background-color: #ffd84b;
-        border: 3px solid var(--primary-color);
+        background-color: #ffdc5c;
+        border: 3px solid #e9b701;
     }
 
     &--cv{
@@ -28,7 +28,7 @@
 
     &--repo{
         width: auto;
-        padding: 1.3rem 3rem;
+        padding: 1.2rem 3rem;
         font-size: var(--small-font-size);
         font-weight: var(--font-bold);
         transition: .3s;

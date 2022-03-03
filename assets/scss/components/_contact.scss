@@ -1,5 +1,6 @@
 .contact{
     height: 100%;
+    width: 100%;
     text-align: center;
 
     &__title{
@@ -7,19 +8,46 @@
     }
 
     &__wrapper{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
         margin: 0 auto;
         min-width: 280px;
-        max-width: 800px;
+        max-width: 75%;
         text-align: center;
-        justify-items: center;
-        align-items: center;
-        display: grid;
-        grid-template-columns: minmax(280px, 900px);
-        grid-template-rows: 300px 900px;
+        padding-bottom: 12rem;
+    }
+
+    &__info{
+        display: none;
+        
     }
 
     &__form{
         display: flex;
         flex-direction: column;
     }
+
+    &__title-form{
+        margin-bottom: var(--m-2);
+        font-size: 2.3rem;
+    }
+
+    &__inputs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__input{
+        margin-bottom: var(--m-2);
+        border: none;
+        padding: 1.5rem;
+    }
+
+    &__button{
+        place-self: end;
+        outline: none;
+    }
+
 }

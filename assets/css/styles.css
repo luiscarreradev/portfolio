@@ -12,9 +12,9 @@
   /*========== Font and typography ==========*/
   /* 1rem = 10px */
   --body-font: 'Roboto Mono', monospace;
-  --biggest-font-size: 3.2rem;
+  --biggest-font-size: clamp(3rem, 4vw, 7rem);
   --h1-font-size: clamp(3rem, 3vw, 3.5rem);
-  --h2-font-size: 3rem;
+  --h2-font-size: 3.8rem;
   --h3-font-size: 1.7rem;
   --normal-font-size: 1.5rem;
   --small-font-size: 1.5rem;
@@ -42,9 +42,8 @@
 
 @media screen and (min-width: 1000px) {
   :root {
-    --biggest-font-size: 6rem;
     --h1-font-size: clamp(3rem, 4vw, 6rem);
-    --h2-font-size: 4rem;
+    --h2-font-size: 4.5rem;
     --h3-font-size: 3rem;
     --normal-font-size: 2rem;
     --small-font-size: 1.6rem;
@@ -69,7 +68,8 @@ html {
 
 body,
 button,
-input {
+input,
+textarea {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
 }
@@ -113,11 +113,6 @@ hr {
   width: 75%;
 }
 
-input, textarea {
-  display: inline-block;
-  width: 100%;
-}
-
 .container {
   margin: 0 auto;
   min-width: 300px;
@@ -130,6 +125,10 @@ input, textarea {
   background-color: var(--gray);
   min-width: 300px;
   width: 100%;
+}
+
+.wrapper--dark {
+  background-color: var(--dark-color);
 }
 
 .section-title {
@@ -211,7 +210,7 @@ input, textarea {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   width: auto;
-  padding: 1.3rem 3rem;
+  padding: 1.2rem 3rem;
   font-size: var(--small-font-size);
   font-weight: var(--font-bold);
   border: 3px solid var(--primary-color);
@@ -220,8 +219,8 @@ input, textarea {
 }
 
 .button:hover {
-  background-color: #ffd84b;
-  border: 3px solid var(--primary-color);
+  background-color: #ffdc5c;
+  border: 3px solid #e9b701;
 }
 
 .button--cv {
@@ -241,7 +240,7 @@ input, textarea {
 
 .button--repo {
   width: auto;
-  padding: 1.3rem 3rem;
+  padding: 1.2rem 3rem;
   font-size: var(--small-font-size);
   font-weight: var(--font-bold);
   -webkit-transition: .3s;
@@ -466,6 +465,10 @@ input, textarea {
   text-align: center;
 }
 
+.about__title {
+  margin-bottom: 10rem;
+}
+
 .about__data {
   text-align: center;
   display: -ms-grid;
@@ -621,8 +624,13 @@ input, textarea {
   gap: 1rem 2rem;
 }
 
+.projects__button--live {
+  padding: 1.3rem 2.1rem;
+}
+
 .contact {
   height: 100%;
+  width: 100%;
   text-align: center;
 }
 
@@ -631,20 +639,27 @@ input, textarea {
 }
 
 .contact__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 auto;
   min-width: 280px;
-  max-width: 800px;
+  max-width: 75%;
   text-align: center;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: minmax(280px, 900px);
-      grid-template-columns: minmax(280px, 900px);
-  -ms-grid-rows: 300px 900px;
-      grid-template-rows: 300px 900px;
+  padding-bottom: 12rem;
+}
+
+.contact__info {
+  display: none;
 }
 
 .contact__form {
@@ -655,6 +670,102 @@ input, textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.contact__title-form {
+  margin-bottom: var(--m-2);
+  font-size: 2.3rem;
+}
+
+.contact__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__input {
+  margin-bottom: var(--m-2);
+  border: none;
+  padding: 1.5rem;
+}
+
+.contact__button {
+  place-self: end;
+  outline: none;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 3rem;
+  height: 100%;
+  padding: 3.5rem 0;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.footer__logo {
+  width: 270px;
+  font-size: 1.4rem;
+  color: var(--tertiary-color);
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: .6rem;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 2.5rem;
+          column-gap: 2.5rem;
+}
+
+.footer__icon {
+  color: var(--tertiary-color);
+  font-size: 2rem;
+  -webkit-transition: color .4s;
+  transition: color .4s;
+}
+
+.footer__icon:hover {
+  color: var(--primary-color);
+}
+
+.footer__text {
+  font-size: 1.2rem;
+  color: rgba(211, 211, 211, 0.739);
+}
+
+.footer__text > span {
+  color: var(--tertiary-color);
 }
 
 @media screen and (min-width: 769px) {
@@ -809,6 +920,68 @@ input, textarea {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .projects__data > p {
+    padding-right: 1rem;
+  }
+  .contact__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    place-self: center;
+    margin-right: 5rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+  .contact__info > span {
+    font-weight: var(--font-medium);
+    color: #7e7e7d;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  .contact__subtitle {
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-bold);
+    line-height: 1.1;
+  }
+  .contact__form {
+    -webkit-box-flex: 2;
+        -ms-flex: 2 1 auto;
+            flex: 2 1 auto;
+  }
+  .footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 5rem 3.2rem;
+  }
+  .footer__logo {
+    width: 320px;
+    font-size: var(--small-font-size);
+  }
+  .footer__icon {
+    font-size: 3rem;
+  }
+  .footer__text {
+    font-size: 1.4rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

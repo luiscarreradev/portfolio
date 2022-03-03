@@ -3,6 +3,10 @@
     width: 100%;
     text-align: center;
 
+    &__title{
+        margin-bottom: 10rem;
+    }
+
     &__data{
         text-align: center;
         display: grid;

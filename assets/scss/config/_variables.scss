@@ -15,9 +15,9 @@
     /* 1rem = 10px */
     --body-font: 'Roboto Mono', monospace;
 
-    --biggest-font-size: 3.2rem;
+    --biggest-font-size: clamp(3rem, 4vw, 7rem);
     --h1-font-size: clamp(3rem, 3vw, 3.5rem);
-    --h2-font-size: 3rem;
+    --h2-font-size: 3.8rem;
     --h3-font-size: 1.7rem;
     --normal-font-size: 1.5rem;
     --small-font-size: 1.5rem;
@@ -25,9 +25,8 @@
 
     // Responsive typography
     @media screen and (min-width: 1000px){
-        --biggest-font-size: 6rem;
         --h1-font-size: clamp(3rem, 4vw, 6rem);
-        --h2-font-size: 4rem;
+        --h2-font-size: 4.5rem;
         --h3-font-size: 3rem;
         --normal-font-size: 2rem;
         --small-font-size: 1.6rem;
