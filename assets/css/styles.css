@@ -127,8 +127,12 @@ hr {
   width: 100%;
 }
 
+.wrapper--gray {
+  background-color: var(--dark-gray);
+}
+
 .wrapper--dark {
-  background-color: var(--dark-color);
+  background-color: var(--secondary-color);
 }
 
 .section-title {
@@ -716,7 +720,7 @@ hr {
   row-gap: 3rem;
   height: 100%;
   padding: 3.5rem 0;
-  background-color: var(--dark-color);
+  background-color: var(--secondary-color);
   color: var(--light-color);
 }
 

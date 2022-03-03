@@ -12,8 +12,12 @@
     min-width: 300px;
     width: 100%;
 
+    &--gray{
+        background-color: var(--dark-gray);
+    }
+
     &--dark{
-        background-color: var(--dark-color);
+        background-color: var(--secondary-color);
     }
 }
 
